@@ -1,0 +1,262 @@
+1. Two-way EDA business questions
+A. Client × Amount
+Which clients generate the highest total invoice value?
+
+Which clients have the highest average invoice amount?
+
+Which clients have the most invoices?
+
+What is the minimum and maximum invoice amount for each client?
+
+Are high-value invoices concentrated among a small number of clients?
+
+Which clients contribute the largest percentage of total revenue?
+
+Do repeat clients have higher average transaction values?
+
+B. Client × Product
+Which products are purchased by each client?
+
+Which clients purchase the largest variety of products?
+
+Which products are most frequently purchased by each client?
+
+Are certain products strongly associated with particular clients?
+
+Which clients are dependent on a single product?
+
+Which products have the broadest client base?
+
+C. Client × Bank Document
+Which payment methods are preferred by each client?
+
+Which clients primarily pay through bank transfers?
+
+Which clients use cash deposits most frequently?
+
+Are certain clients more likely to use bills of exchange?
+
+What is the total amount collected through each payment method by client?
+
+Do different clients have different payment behaviors?
+
+D. Product × Amount
+Which products generate the highest revenue?
+
+Which products have the highest average invoice value?
+
+Which products have the largest variation in transaction amounts?
+
+Are certain products consistently associated with high-value invoices?
+
+Which products contribute most to total sales value?
+
+Which products have frequent transactions but relatively low average value?
+
+E. Product × Bank Document
+Which payment methods are most commonly used for each product?
+
+Are expensive products more likely to be paid by bank transfer?
+
+Are certain products disproportionately associated with cash deposits?
+
+Which products have the highest amount collected through each payment method?
+
+F. Invoice Date × Amount
+How does invoice value change over time?
+
+Which dates have unusually high-value invoices?
+
+Are invoice amounts increasing or decreasing over time?
+
+What is the daily total invoice value?
+
+What is the average invoice amount by month?
+
+Are there unusual spikes or drops in invoice value?
+
+G. Invoice Date × Client
+Which clients generate invoices most frequently over time?
+
+Which clients are active during which periods?
+
+Are some clients becoming more or less active over time?
+
+Which dates have multiple invoices from the same client?
+
+What is the monthly client contribution to revenue?
+
+H. Invoice Date × Bank Document
+How does payment-method usage change over time?
+
+Which payment methods generate the highest value over time?
+
+Are cash deposits becoming more or less frequent?
+
+Are there particular periods with unusually high use of transfers or bills of exchange?
+
+2. Three-way EDA business questions
+Three-way analysis is useful when you want to understand how one relationship changes depending on a third variable.
+
+A. Client × Product × Amount
+Which client-product combinations generate the highest revenue?
+
+Which clients spend the most on each product?
+
+Which products generate the highest average invoice value for each client?
+
+Are high-value transactions concentrated around particular client-product combinations?
+
+Which client-product combinations have the most transactions?
+
+Example:
+TERRASTRUCT → CEMENT CPJ35 → €36,790
+
+B. Client × Payment Method × Amount
+Which clients generate the highest payment value through each bank-document type?
+
+Does a client's preferred payment method change according to transaction value?
+
+Which clients have the highest average transaction value for cash deposits?
+
+Which clients have the highest average transaction value for transfers?
+
+Are particular clients associated with high-value transactions through specific payment methods?
+
+C. Product × Payment Method × Amount
+Which products generate the most revenue through bank transfers?
+
+Which products are most frequently paid for using cash deposits?
+
+Which product-payment combinations have the highest average transaction value?
+
+Are expensive products associated with particular payment methods?
+
+Does payment behavior differ depending on the product purchased?
+
+D. Date × Client × Amount
+Which clients contributed the most revenue during each month?
+
+Which clients had unusually large transactions on particular dates?
+
+Are revenue spikes caused by existing major clients or new clients?
+
+How does each client's average invoice value change over time?
+
+Which clients show increasing transaction frequency over time?
+
+E. Date × Product × Amount
+Which products drive revenue growth over time?
+
+Which products experience sudden increases in sales value?
+
+Are certain products seasonal?
+
+Which product has the highest monthly revenue?
+
+Are high-value transactions concentrated in particular periods for specific products?
+
+F. Date × Payment Method × Amount
+How does the value collected through each payment method change over time?
+
+Which payment method generates the highest monthly collection?
+
+Are there periods where cash deposits become unusually high?
+
+Are transfer payments associated with higher invoice values over time?
+
+Are payment-method patterns changing from month to month?
+
+3. More advanced three-way business questions
+These are particularly useful for a management/business dashboard.
+
+Revenue concentration
+What percentage of total revenue comes from the top 5 client-product combinations?
+
+Which clients generate high revenue across multiple products?
+
+Which products generate high revenue across multiple clients?
+
+Is revenue diversified or concentrated among a few client-product combinations?
+
+Customer behavior
+Which clients have both high transaction frequency and high average invoice value?
+
+Which clients purchase multiple products but generate relatively low revenue?
+
+Which clients consistently make high-value purchases through the same payment method?
+
+Which clients have changing purchasing patterns over time?
+
+Payment behavior
+Which payment methods are associated with the largest transactions?
+
+Which client-product combinations are most likely to use cash?
+
+Which client-product combinations are most likely to use transfers?
+
+Which payment method is responsible for the largest share of total collections?
+
+Risk / anomaly analysis
+Which client-product-payment combinations have unusually large amounts?
+
+Are there unusual cash transactions compared with normal transaction values?
+
+Are there dates where transaction values are significantly above the normal range?
+
+Are duplicate client-product transactions occurring on the same date?
+
+Are there clients with unusual payment methods compared with their historical behavior?
+
+4. Particularly useful KPIs to derive
+From your dataset, I'd calculate:
+
+KPI	Business question
+Total Revenue	How much has been invoiced?
+Number of Invoices	How active is the business?
+Average Invoice Value	What is the typical transaction size?
+Median Invoice Value	What is the typical transaction without outlier influence?
+Revenue per Client	Which clients contribute most?
+Revenue per Product	Which products drive sales?
+Invoice Count per Client	Which clients purchase most frequently?
+Product Diversity per Client	How broadly does each client purchase?
+Payment Method Share	How are invoices being paid?
+Average Amount by Payment Method	Which payment method handles larger transactions?
+Monthly Revenue	How does revenue evolve?
+Monthly Invoice Count	How does transaction activity evolve?
+Top Client-Product Combination	Where is revenue concentrated?
+Top Client-Payment Combination	Who uses which payment mechanism?
+Top Product-Payment Combination	How are products being paid for?
+
+5. Best questions to start with
+If this is for a business EDA/project, I'd prioritize these 15:
+
+Which clients contribute the most total revenue?
+
+Which products generate the most revenue?
+
+Which client-product combinations generate the most revenue?
+
+What is the average invoice value by client?
+
+What is the average invoice value by product?
+
+Which clients purchase the widest variety of products?
+
+Which payment methods are most frequently used?
+
+Which payment methods generate the highest collection value?
+
+Which clients prefer each payment method?
+
+Which product-payment combinations generate the highest value?
+
+How does revenue change over time?
+
+Which clients drive monthly revenue?
+
+Which products drive monthly revenue?
+
+Are there unusually large transactions or unusual payment patterns?
+
+Is revenue concentrated among a small number of clients, products, or client-product combinations?
